@@ -1,8 +1,8 @@
 const viewer = document.querySelector('spline-viewer');
 
-// Listen for clicks on specific parts of the Spline model
+// Listens for clicks on specific parts of the Spline model
 viewer.addEventListener('click', (event) => {
-    const objectName = event.target.name; // Name of the clicked object in Spline
+    const objectName = event.target.name; 
     if (objectName === 'Head') {
         openVideo('videos/head.mp4');
     } else if (objectName === 'Abdomen') {
@@ -12,7 +12,7 @@ viewer.addEventListener('click', (event) => {
     }
 });
 
-// Function to open videos in a new tab
+// this opens the videos in a new tab
 function openVideo(videoPath) {
     window.open(videoPath, '_blank');
 }
