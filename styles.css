@@ -271,20 +271,20 @@ video {
     }
 
     .logo {
-        font-size: 18px;
+        font-size: 20px;
         top: 10px;
         left: 10px;
     }
 
     .catchy-text {
         top: 60%;
-        right: 50px;
-        font-size: 8px;
+        right: 5px;
+        font-size: 6px;
     }
 
     .instruction-container {
         width: 90%;
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .video-containers,
