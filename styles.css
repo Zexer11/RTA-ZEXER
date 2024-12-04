@@ -1,22 +1,19 @@
-/* General Body Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
-    overflow-y: scroll; /* Adds vertical scrollbar */
+    overflow-y: scroll;
 }
 
-/* Spline Container */
 .spline-container {
     position: relative;
     width: 100%;
-    height: 70vh; /* Reduced height */
+    height: 70vh;
     background-color: #ffffff;
     overflow: hidden;
 }
 
-/* Logo Styling */
 .logo {
     position: absolute;
     top: 20px;
@@ -28,7 +25,6 @@ body {
     z-index: 10;
 }
 
-/* Catchy Paragraph Styling */
 .catchy-text {
     position: absolute;
     top: 50%;
@@ -54,7 +50,6 @@ body {
     font-family: 'Courier New', monospace;
 }
 
-/* Instruction Container Styling */
 .instruction-container {
     position: relative;
     top: -30px;
@@ -72,7 +67,6 @@ body {
     line-height: 1.5;
 }
 
-/* Styling for the Video Containers */
 .video-containers {
     display: flex;
     justify-content: space-between;
@@ -93,7 +87,6 @@ video {
     height: auto;
 }
 
-/* Description Containers Styling */
 .description-containers {
     display: flex;
     justify-content: space-between;
@@ -121,7 +114,6 @@ video {
     line-height: 1.5;
 }
 
-/* ABOUT ZEXER Section */
 .about-zexer {
     margin-top: 30px;
     padding: 30px 0;
@@ -135,13 +127,12 @@ video {
     color: #2E4053;
 }
 
-/* About Content Layout */
 .about-content {
     display: flex;
     justify-content: space-between;
     margin: 30px auto;
     width: 90%;
-    flex-wrap: wrap; /* Responsive layout */
+    flex-wrap: wrap; 
 }
 
 .about-text {
@@ -174,7 +165,6 @@ video {
     margin-bottom: 10px;
 }
 
-/* Bottom Containers: Thanks and Timelapse */
 .bottom-containers {
     display: flex;
     justify-content: space-between;
@@ -199,28 +189,25 @@ video {
     background-color: rgba(66, 79, 129, 0.8);
 }
 
-/* Footer Section */
 .footer {
-    background-color: rgba(50, 50, 50, 0.8); /* Translucent grey */
+    background-color: rgba(50, 50, 50, 0.8);
     color: white;
     padding: 20px 0;
     text-align: center;
     font-family: 'Arial', sans-serif;
 }
 
-/* Footer Content Layout */
 .footer-content {
-    display: flex; /* Align items horizontally */
-    justify-content: space-between; /* Equal spacing between sections */
-    align-items: flex-start; /* Align items to the top */
-    flex-wrap: wrap; /* Allows wrapping for responsiveness */
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    flex-wrap: wrap;
     margin: 0 auto;
-    width: 75%; /* Matches the layout */
+    width: 75%; 
 }
 
-/* Footer Sections (Contact, Credits, Social Media) */
 .footer-content div {
-    width: 30%; /* Each section takes up about 30% */
+    width: 30%;
     padding: 10px;
     text-align: left;
 }
@@ -228,12 +215,12 @@ video {
 .footer-content h4 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: black; /* Highlight headers in green */
+    color: black; 
 }
 
 .footer-content p, .footer-content a, .footer-content ul li {
     font-size: 14px;
-    color: #ddd; /* Light grey text */
+    color: #ddd; 
     text-decoration: none;
     line-height: 1.8;
 }
@@ -242,20 +229,19 @@ video {
     margin: 0;
     padding: 0;
     list-style-type: square;
-    padding-left: 15px; /* Indent list items */
+    padding-left: 15px; 
 }
 
 .footer-content a:hover {
-    color: black; /* Green highlight on hover */
+    color: black; 
 }
 
-/* Social Media Links */
 .social-media a {
     display: inline-block;
     margin-top: 10px;
     padding: 8px 15px;
     color: white;
-    background-color: #333; /* Background for the GitHub icon */
+    background-color: #333; 
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
@@ -263,14 +249,13 @@ video {
 }
 
 .social-media a.github {
-    background-color: #24292e; /* GitHub dark grey color */
+    background-color: #24292e; 
 }
 
 .social-media a:hover {
-    background-color: #9c9f9c; /* Green hover effect */
+    background-color: #9c9f9c; 
 }
 
-/* Footer Bottom Section */
 .footer-bottom {
     margin-top: 20px;
     font-size: 12px;
@@ -279,10 +264,10 @@ video {
     padding-top: 10px;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     .spline-container {
         height: 50vh;
+         width: 100%;
     }
 
     .logo {
@@ -320,31 +305,31 @@ video {
     }
 
     .footer-content {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center-align the sections */
-        width: 90%; /* Increase width for smaller screens */
+        flex-direction: column; 
+        align-items: center; 
+        width: 90%;
     }
 
     .footer-content div {
-        width: 100%; /* Full width for each section */
-        text-align: center; /* Center-align text */
-        margin-bottom: 20px; /* Add spacing between sections */
+        width: 100%; 
+        text-align: center; 
+        margin-bottom: 20px; 
     }
 
     .footer-content h4 {
-        font-size: 16px; /* Slightly smaller header font */
+        font-size: 16px;
     }
 
     .footer-content p, .footer-content a, .footer-content ul li {
-        font-size: 13px; /* Slightly smaller text for readability */
+        font-size: 13px;
     }
 
     .social-media a {
-        margin: 10px 5px; /* Adjust spacing between social media links */
+        margin: 10px 5px; 
     }
 
     .footer-bottom {
-        font-size: 11px; /* Reduce size slightly for smaller screens */
-        text-align: center; /* Center-align the text */
+        font-size: 11px;
+        text-align: center; 
     }
 }
