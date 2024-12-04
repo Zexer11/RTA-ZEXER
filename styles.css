@@ -267,7 +267,7 @@ video {
 @media (max-width: 768px) {
     .spline-container {
         height: 50vh;
-         width: 100%;
+        
     }
 
     .logo {
@@ -278,12 +278,13 @@ video {
 
     .catchy-text {
         top: 60%;
-        right: 10px;
-        font-size: 14px;
+        right: 5px;
+        font-size: 8px;
     }
 
     .instruction-container {
         width: 90%;
+        height:45%
         font-size: 12px;
     }
 
