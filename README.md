@@ -5,12 +5,12 @@ Welcome to the ZEXER portfolio project! This website showcases the ZEXER project
 ## Table of Contents
 1. [Project Overview](#project-overview)
 2. [Features](#features)
-3. [Setup and Installation](#setup-and-installation)
-4. [Usage](#usage)
-5. [Technologies Used](#technologies-used)
-6. [Contributing](#contributing)
-7. [Contact](#contact)
-8. [License](#license)
+3. [Usage](#usage)
+4. [Technologies Used](#technologies-used)
+5. [Contributing](#contributing)
+6. [Contact](#contact)
+7. [License](#license)
+
 
 ## Project Overview
 
@@ -26,16 +26,4 @@ The ZEXER portfolio project includes:
 - **Timelapse Video**: View a timelapse of the website creation process.
 - **Modern Design**: Clean and responsive design that looks great on all devices.
 
-## Setup and Installation
 
-To run this project locally, follow the steps below:
-
-### Prerequisites
-- **Git**: Ensure you have Git installed on your machine. [Download Git here](https://git-scm.com/downloads).
-- **Visual Studio Code**: A popular editor for HTML, CSS, and JavaScript. [Download here](https://code.visualstudio.com/).
-
-### Cloning the Repository
-1. Open your terminal or command prompt.
-2. Clone the repository using the following command:
-   ```bash
-   git clone https://github.com/Zexer11/RTA-ZEXER.git
