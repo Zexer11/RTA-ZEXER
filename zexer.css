@@ -1,0 +1,392 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E5E5E5; /* Light gray */
+    color: #4A4A4A; /* Dark gray for text */
+}
+
+header {
+    background-color: #A3B5C3; /* Muted steel blue */
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h2 {
+    margin: 0;
+    color: #5D6D7E; /* Dusty blue */
+}
+
+.dashboard {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #BDC3C7; /* Soft grayish blue */
+    color: #4A4A4A;
+    padding: 5em;
+    height: 100vh;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #4A4A4A;
+    text-decoration: none;
+}
+
+main {
+    flex-grow: 1;
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: #7F8C8D; /* Cool gray */
+}
+
+/* Prototype Monitor Section */
+.prototype-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.image-container {
+    flex: 3;
+}
+
+#prototype-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.info-containers {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 4;
+}
+
+.info-box {
+    background-color: #A3B5C3; /* Muted steel blue */
+    padding: 15px;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.info-box h3 {
+    margin-bottom: 10px;
+    color: #5D6D7E; /* Dusty blue */
+}
+
+.info-box p {
+    margin: 0;
+}
+
+/* Components Section */
+#components {
+    background-color: #5D6D7E; /* A very light gray for subtle contrast */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+}
+
+#components h2 {
+    color: #6c757d; /* Muted slate gray for the heading */
+}
+
+.components-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.features-container {
+    background-color: #e3e4e8; /* Very light lavender/gray tone for a soft background */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07); /* Lighter shadow for less intensity */
+    color: #555555; /* Soft gray text for minimalism */
+}
+
+.features-container h3 {
+    color: #495057; /* A darker muted gray for headings */
+    border-bottom: 2px solid #6c757d; /* Subtle border for emphasis */
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.features-container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    line-height: 1.6;
+}
+
+.features-container ul li {
+    color: #6c757d; /* Muted gray for the list items */
+}
+
+/* Prototype Progress Section */
+/* Image Gallery Layout */
+.image-gallery {
+    display: flex; /* Enables the flex layout */
+    gap: 20px; /* Adjusts the gap between the image-item divs */
+    justify-content: flex-start; /* Aligns items to the left */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.image-item {
+    display: flex; /* Aligns image and description horizontally */
+    flex-direction: row; /* Image on the left, description on the right */
+    align-items: center; /* Vertically aligns image and description */
+    width: 48%; /* Adjust width to fit side by side, can tweak percentage */
+    margin-bottom: 20px; /* Space between rows if wrapping */
+}
+
+.image-item img {
+    width: 20%; /* Set image width to 15% */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-item img:hover {
+    transform: scale(1.05);
+}
+
+.image-description {
+    margin-left: 10px; /* Space between image and description */
+    font-size: 1rem;
+    color: #333;
+    text-align: justify;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Let the description take up the remaining space */
+    max-width: 80%; /* Prevents the description from becoming too wide */
+}
+
+.image-description p {
+    margin: 0;
+    font-weight: bold;
+}
+
+
+
+
+/* PCB Design Section */
+#pcb-design {
+    background-color:#5D6D7E; /* Light gray */
+    padding: 20px;
+    border-radius: 10px;
+    color: #4A4A4A;
+    margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#pcb-design h2 {
+    color: #7F8C8D; /* Cool gray */
+    margin-bottom: 15px;
+}
+
+#pcb-design ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    line-height: 1.6;
+}
+
+#pcb-design ul li {
+    margin-bottom: 10px;
+}
+
+/* Updated Image Gallery */
+#pcb-design .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+#pcb-design .image-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#pcb-design .image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+#pcb-design .view-links {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #BDC3C7; /* Soft grayish blue */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#pcb-design .view-links h3 {
+    color: #5D6D7E; /* Dusty blue */
+    margin-bottom: 10px;
+}
+
+#pcb-design .view-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#pcb-design .view-links ul li {
+    margin-bottom: 10px;
+}
+
+#pcb-design .view-links ul li a {
+    color: #00B4D8; /* Light teal */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#pcb-design .view-links ul li a:hover {
+    color: #7F8C8D; /* Cool gray */
+}
+
+/* Lightbox Styling */
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+#lightbox-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#lightbox-close:hover {
+    transform: scale(1.2);
+}
+
+
+/* Footer Section */
+.footer {
+    background-color: rgba(50, 50, 50, 0.8); /* Translucent grey */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Footer Content Layout */
+.footer-content {
+    display: flex; /* Align items horizontally */
+    justify-content: space-between; /* Equal spacing between sections */
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allows wrapping for responsiveness */
+    margin: 0 auto;
+    width: 75%; /* Matches the layout */
+}
+
+/* Footer Sections (Contact, Credits, Social Media) */
+.footer-content div {
+    width: 30%; /* Each section takes up about 30% */
+    padding: 10px;
+    text-align: left;
+}
+
+.footer-content h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: black; /* Highlight headers in green */
+}
+
+.footer-content p, .footer-content a, .footer-content ul li {
+    font-size: 14px;
+    color: #ddd; /* Light grey text */
+    text-decoration: none;
+    line-height: 1.8;
+}
+
+.footer-content ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: square;
+    padding-left: 15px; /* Indent list items */
+}
+
+.footer-content a:hover {
+    color: black; /* Green highlight on hover */
+}
+
+/* Social Media Links */
+.social-media a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    color: white;
+    background-color: #333; /* Background for the GitHub icon */
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.social-media a.github {
+    background-color: #24292e; /* GitHub dark grey color */
+}
+
+.social-media a:hover {
+    background-color: #9c9f9c; /* Green hover effect */
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #aaa;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}

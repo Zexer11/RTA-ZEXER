@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEXER Dashboard</title>
+    <link rel="stylesheet" href="zexer.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h2>ZEXER</h2>
+        </div>
+    </header>
+
+    <!-- Main Dashboard -->
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#monitor">Prototype Monitor</a></li>
+                <li><a href="#components">Components</a></li>
+                <li><a href="#progress">Prototype Progress</a></li>
+                <li><a href="#pcb-design">PCB Customization</a></li>
+                <li><a href="#deadlines">Upcoming Deadlines</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Prototype Monitoring Section -->
+            <section id="monitor">
+                <h2>Prototype</h2>
+                <div class="prototype-container">
+                    <div class="info-containers">
+                        <div class="info-box" id="head">
+                            <h2>HEAD</h2>
+                        </div>
+                        <div class="info-box" id="abdomen">
+                            <h2>ABDOMEN</h2>
+                        </div>
+                        <div class="info-box" id="base">
+                            <h2>BASE</h2>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="images/zexer.png" alt="ZEXER Prototype" id="prototype-img" usemap="#prototype-map">
+                    </div>
+                </div>
+            </section>
+            <section id="components">
+                <h2>Components</h2>
+                <div class="components-section">
+                    <!-- Key Features -->
+                    <div class="features-container">
+                        <h3>Key Features for the Prototype</h3>
+                        <ul>
+                            <li><strong>Facial Recognition:</strong> Scans and registers students' names and faces.</li>
+                            <li><strong>Attendance Tracking:</strong> Tracks attendance using the facial recognition system.</li>
+                            <li><strong>Interactive Teaching:</strong> Includes basic lessons, quizzes, and interactive student activities.</li>
+                            <li><strong>Content Delivery:</strong> Displays uploaded notes and multimedia content.</li>
+                        </ul>
+                    </div>
+            
+                    <!-- Revised Design Features -->
+                    <div class="features-container">
+                        <h3>Revised Design Features</h3>
+                        <h4>Display on the Head:</h4>
+                        <ul>
+                            <li>Small LCD screen for facial representations (e.g., animations or icons).</li>
+                            <li>Dynamic expressions to simulate interaction.</li>
+                        </ul>
+                        <h4>Projector on the Back:</h4>
+                        <ul>
+                            <li>Portable projector to deliver content on a wall or screen.</li>
+                            <li>Acts as a teaching tool for group lessons.</li>
+                        </ul>
+                        <h4>Interactive Features:</h4>
+                        <ul>
+                            <li>Facial recognition system for personalized interactions.</li>
+                            <li>Audio teaching via a speaker system.</li>
+                        </ul>
+                    </div>
+            
+                    <!-- Hardware Components -->
+                    <div class="features-container">
+                        <h3>Hardware Components</h3>
+                        <ul>
+                            <li><strong>ESP32 Dev Board:</strong> For overall control.</li>
+                            <li><strong>ESP32-CAM Module:</strong> Handles facial recognition.</li>
+                            <li><strong>OLED/IPS Display:</strong> Displays facial expressions or student names.</li>
+                            <li><strong>DIY Mini Projector:</strong> Created using:
+                                <ul>
+                                    <li>Small TFT 2.4–3.5 inch LCD screen</li>
+                                    <li>CREE XLamp series XHP50</li>
+                                    <li>Sunon MF40101V2 40x40x10 mm cooling fan</li>
+                                </ul>
+                            </li>
+                            <li><strong>Speaker with Amplifier (PAM8403):</strong> For voice output.</li>
+                            <li><strong>MicroSD Card Module:</strong> Stores video, audio, or image content.</li>
+                            <li><strong>Lithium-ion Battery:</strong> For portability, paired with a 5V boost converter (MT3608).</li>
+                            <li><strong>3D-Printed Enclosure:</strong> Protects and organizes components.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="progress">
+                <h2>Prototype Progress</h2>
+                <p>I'm in the final stages of bringing the ZEXER prototype to life. After completing the planning phase, I’ve moved forward with the design and purchased most of the necessary components. I’m now waiting for the remaining parts to arrive, after which I’ll assemble everything and begin testing. Once the hardware is put together, the next step will involve programming and troubleshooting to ensure everything functions seamlessly.</p>
+                
+                <h3>Initial Designs and Planning</h3>
+                <p>The initial design of the prototype was carefully planned out, and here are some of the early sketches that helped shape the final version:</p>
+            
+                <div class="image-gallery">
+                    <div class="image-item">
+                        <img src="images/sketch 1.jpg" alt="Image 1" class="expandable">
+                        <div class="image-description">
+                            <p>"Here’s where the magic begins: a detailed pencil sketch of the ESP32 CAM module paired with a Graphic LCD, illustrating how the components will be connected. On the right side, you can see the actual physical modules—it's like a sneak peek into the future prototype, where imagination meets reality. The sketch is a blueprint, and the modules are the building blocks coming to life!
+
+                                It's amazing how these little pieces of tech will come together to create the foundation for the interactive learning system. The ESP32 CAM module is the brain behind facial recognition, while the Graphic LCD will be used to display dynamic expressions, making our prototype not just functional but expressive!"</p>
+                        </div>
+                    </div>
+                
+                    <div class="image-item">
+                        <img src="images/sketch 2.jpg" alt="Image 2" class="expandable">
+                        <div class="image-description">
+                            <p>"Now, let’s zoom in on the heartbeat of the prototype—the abdomen area! This detailed sketch shows the inner workings, featuring key components like the MT3608 boost converter, constant current driver, 3.7V battery, TFT LCD screen, audio amplifier, microSD card module, cooling fan, and speaker. Each part is strategically connected to the ESP32 module, ensuring everything functions seamlessly.
+
+                                On the left, you’ll see a visual breakdown of how these components interlink, providing power, display, sound, and storage. The boost converter ensures stable voltage, while the constant current driver keeps everything running smoothly without overloading. The cooling fan ensures things stay cool during operation, and the audio amplifier will make sure the system is heard loud and clear. Plus, with the microSD card module, we can store a ton of teaching content for later use!
+                                
+                                It's like the ‘organizing center’ of the prototype, where all these essential elements come together to give the bot the power, intelligence, and interactive ability it needs."</p>
+                        </div>
+                    </div>
+                
+                    <!-- Add more image-item divs as needed -->
+                </div>
+
+                <div id="lightbox">
+                    <img src="" alt="Expanded View" id="lightbox-img">
+                    <span id="lightbox-close">&times;</span>
+                </div>
+
+              <p>With most of the components already purchased, I’m just waiting for the final few to complete the build. After assembling the parts, I’ll begin testing to ensure everything works as expected. The final hurdle will be programming the system and troubleshooting any issues that arise during testing. I’m excited to see how the prototype evolves as I move forward!</p>
+            </section>
+            
+            
+
+            <section id="pcb-design">
+                <h2>PCB Customization</h2>
+                <p>
+                    While I am currently working on the prototype using pre-made modules, one of my primary goals is to create a compact and portable design. However, I recognize that relying on these off-the-shelf components may not be ideal for the final version of the bot. These modules take up space, involve complex wiring, and lack the streamlined integration needed for a polished, professional product. 
+                </p>
+                <p>
+                    To overcome these limitations, I have decided to design and customize my own PCB, which I will incorporate into future iterations of the prototype. Although I am not an expert in PCB design, this step will allow me to:
+                </p>
+                <ul>
+                    <li>Optimize the layout for better space efficiency and portability.</li>
+                    <li>Embed connections directly onto the board, eliminating the need for excessive wiring.</li>
+                    <li>Achieve a professional and robust design tailored to the specific needs of the bot.</li>
+                    <li>Improve reliability by minimizing interference and ensuring consistent power delivery.</li>
+                </ul>
+                <p>
+                    Designing a PCB is a significant learning curve for me, but it’s also an exciting challenge. I have started working on the schematics, component placement, and routing to ensure that all the features of the bot are seamlessly integrated into one cohesive system.
+                </p>
+                <div class="image-gallery">
+                    <img src=images/schematic.jpg alt="Schematic Design" class="expandable">
+                    <img src="images/front pcb.jpg" alt="Custom PCB Design" class="expandable">
+                    <img src="images/back pcb.jpg" alt="Prototype Materials" class="expandable">
+                    <img src="images/front.png" alt="Prototype Materials" class="expandable">
+                    <img src="images/back.png" alt="Prototype Materials" class="expandable">
+                </div>
+                <div class="view-links">
+                    <h3>View Component Details</h3>
+                    <ul>
+                        <li><a href="files/PickAndPlace_ZEXER.csv" target="_blank">Pick and Place File</a></li>
+                        <li><a href="files/BOM_ZEXER.csv" target="_blank">BOM File</a></li>
+                    </ul>
+                </div>
+
+                 <!-- Lightbox for Image Expansion -->
+                <div id="lightbox">
+                    <img src="" alt="Expanded View" id="lightbox-img">
+                    <span id="lightbox-close">&times;</span>
+                </div>
+            </section>
+      
+            <section id="3d-printing-case">
+                <h2>3D Printing the Prototype Case</h2>
+                <p>
+                    One of the critical steps in completing the ZEXER prototype is designing and printing the case that will house all the electronic components. As I’m utilizing an existing model I’ve created in Blender, I’m in the process of designing a custom 3D-printed enclosure that will protect and organize the components of the bot while ensuring easy access for maintenance and upgrades. 
+                </p>
+                <p>
+                    The design of the case takes into account a variety of important considerations, such as:
+                </p>
+                <ul>
+                    <li><strong>Component Size and Layout:</strong> The case is being designed to perfectly accommodate the size and layout of all the core components, including the ESP32 Dev Board, ESP32-CAM Module, OLED/IPS Display, Projector, and other hardware components. Ensuring a snug yet accessible fit will prevent movement and ensure reliable functionality during use.</li>
+                    <li><strong>Ventilation and Cooling:</strong> Considering the potential heat generated by components like the MT3608 boost converter, audio amplifier, and speaker, the case will feature ventilation areas to promote proper airflow. Additionally, there will be room for the cooling fan to ensure that heat does not build up, ensuring longevity and stability during operation.</li>
+                    <li><strong>Component Accessibility:</strong> The case will have easy access to ports and connections, such as the power input, microSD card slot, and the camera module. This will allow for seamless upgrades, testing, and troubleshooting.</li>
+                    <li><strong>Weight and Portability:</strong> I’m working to create a case that’s lightweight and portable, ensuring that the prototype is easy to move around while still offering durability and strength.</li>
+                    <li><strong>3D Printing Materials:</strong> The case will be printed using durable, high-quality filament that can withstand daily wear and tear. I’m considering using PLA for its ease of use, or ABS for additional strength if required.</li>
+                    <li><strong>Assembly and Modularity:</strong> The design will feature modular components, allowing easy assembly and disassembly for testing or future enhancements. The case will have separate compartments for different sections of the bot, ensuring no interference between electronic parts.</li>
+                </ul>
+                <p>
+                    Once the design is finalized, I’ll be using Ultimaker Cura as my slicer software to prepare the 3D model for printing. Cura will help optimize the print for efficiency, balancing speed and quality to ensure a well-executed final product. I’m taking into account factors like the infill density, layer height, and print speed to get the most durable and precise results.
+                </p>
+                <p>
+                    Below is a video showing the design process in Blender, along with a sneak peek of the initial 3D print tests. This will give you a glimpse into how the prototype case is coming to life and how I’m tackling all the intricate design elements.
+                </p>
+                
+                <!-- Video Embed -->
+                <div class="video-container"  style="display: flex; justify-content: center; align-items: center;">
+                    <video controls width="640" height="360">
+                        <source src="videos\3D case .mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+            
+            <section id="deadlines">
+                <h2>Upcoming Deadlines</h2>
+                <p>Finalize testing by March 2025.</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="zexer.js"></script>
+</body>
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h4>Contact Information</h4>
+            <p>Email: <a href="mailto:liznjira480@gmail.com">liznjira480@gmail.com</a></p>
+            <p>Phone: +254 706 357 900</p>
+        </div>
+
+        <!-- Credits -->
+        <div class="credits">
+            <h4>Credits</h4>
+            <p>Special thanks to the tools and resources that made this project possible:</p>
+            <ul>
+                <li>Blender </li>
+                <li>EasyEDA Pro</li>
+                <li>Visual Studio Code</li>
+                <li>Arduino IDE</li>
+                <li>Clipchamp</li>
+                <li>JLCPCB </li>
+            </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-media">
+            <h4>Follow Me</h4>
+            <a href="https://github.com/Zexer11/RTA-ZEXER" target="_blank" class="social-icon github">GitHub</a>
+        </div>
+    </div>
+
+    <!-- Copyright Notice -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 ZEXER . All Rights Reserved.</p>
+    </div>
+</footer>
+</html>
