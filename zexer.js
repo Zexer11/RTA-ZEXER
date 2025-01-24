@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("DOM fully loaded and parsed"); // Debugging
+    console.log("DOM fully loaded and parsed"); 
 
     const lightbox = document.getElementById("lightbox");
     const lightboxImg = document.getElementById("lightbox-img");
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     expandableImages.forEach(image => {
         image.addEventListener("click", () => {
-            console.log("Image clicked:", image.src); // Debugging
+            console.log("Image clicked:", image.src); 
             lightbox.style.display = "flex";
             lightboxImg.src = image.src;
             lightboxImg.alt = image.alt;
@@ -16,13 +16,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     lightboxClose.addEventListener("click", () => {
-        console.log("Close button clicked"); // Debugging
+        console.log("Close button clicked"); 
         lightbox.style.display = "none";
     });
 
     lightbox.addEventListener("click", (e) => {
         if (e.target === lightbox) {
-            console.log("Outside of image clicked"); // Debugging
+            console.log("Outside of image clicked"); 
             lightbox.style.display = "none";
         }
     });
