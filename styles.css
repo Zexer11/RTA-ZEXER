@@ -145,7 +145,7 @@ video {
 
 .jungle-green-container {
     width: 25%;
-    background-color: grey;
+    background-color:rgba(66, 129, 99, 0.8);
     color: white;
     padding: 0px;
     padding-left: 5px;
@@ -188,7 +188,41 @@ video {
 .timelapse-container {
     background-color: rgba(66, 79, 129, 0.8);
 }
+.prototype-container {
+    background-color:  rgba(170, 105, 90, 0.8);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
 
+.prototype-container h3 {
+    font-size: 1.5rem;
+    color: #2b2b2b;
+    margin-bottom: 10px;
+}
+
+.prototype-container p {
+    font-size: 1rem;
+    color: #4a4a4a;
+    margin-bottom: 15px;
+}
+
+.prototype-container .blueprint-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0066cc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.prototype-container .blueprint-link:hover {
+    background-color: #00509e;
+}
 .footer {
     background-color: rgba(50, 50, 50, 0.8);
     color: white;
