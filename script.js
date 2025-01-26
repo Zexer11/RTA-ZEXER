@@ -1,6 +1,5 @@
 const viewer = document.querySelector('spline-viewer');
 
-// Listens for clicks on specific parts of the Spline model
 viewer.addEventListener('click', (event) => {
     const objectName = event.target.name; 
     if (objectName === 'Head') {
@@ -12,7 +11,6 @@ viewer.addEventListener('click', (event) => {
     }
 });
 
-// this opens the videos in a new tab
 function openVideo(videoPath) {
     window.open(videoPath, '_blank');
 }
